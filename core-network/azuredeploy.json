@@ -4,14 +4,14 @@
   "parameters": {
     "adminUsername": {
       "type": "string",
-      "defaultValue": "EnterpriseAdmin"
+      "defaultValue": "nkerlund"
     },
     "adminPassword": {
       "type": "securestring"
     },
     "domainName": {
       "type": "string",
-      "defaultValue": "devnet.contoso.us"
+      "defaultValue": "spacefarm.cloud"
     },
     "jumpBoxVmSize": {
       "type": "string",
@@ -63,7 +63,7 @@
         "Standard_DS14_v2",
         "Standard_DS15_v2"
       ],
-      "defaultValue": "Standard_B1s"
+      "defaultValue": "Standard_B2s"
     }
   },
   "variables": {
