@@ -81,7 +81,7 @@
     "adPDCVMName": "DC1",
     "adBDCVMName": "DC2",
     "DCHASetName": "DCHASet",
-    "baseUri": "[deployment().properties.templateLink.uri]",
+    "baseUri": "https://raw.githubusercontent.com/vniklas/iac/master/core-network/azuredeploy.json",
     "windowsVmTemplateURL": "[uri(variables('baseUri'),'../primitives/windowsvm.json')]",
     "windowsdcVmTemplateURL": "[uri(variables('baseUri'),'../primitives/windowsvmcore.json')]",
     "adPDCModulesURL": "[uri(variables('baseUri'),'DSC/CreateADPDC.ps1.zip')]",
