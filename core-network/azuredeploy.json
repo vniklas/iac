@@ -77,7 +77,7 @@
     "jumpNICVnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('coreVnetName'))]",
     "jumpNICSubnetRef": "[concat(variables('jumpNICVnetID'), '/subnets/', variables('corevnetDevOpsSubnetName'))]",
     "ADSubnetRef": "[concat(variables('jumpNICVnetID'), '/subnets/', variables('corevnetDCSubnetName'))]",
-    "jumpVMName": "JumpBox",
+    "jumpVMName": "WinBast",
     "adPDCVMName": "DC1",
     "adBDCVMName": "DC2",
     "DCHASetName": "DCHASet",
