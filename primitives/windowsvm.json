@@ -45,7 +45,7 @@
         },
         "dataDiskSize": {
             "type": "int",
-            "defaultValue": 1023
+            "defaultValue": 20
         },
         "numberOfDataDisks": {
             "type": "int",
