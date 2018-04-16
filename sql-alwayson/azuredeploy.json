@@ -63,7 +63,7 @@
     },
     "sqlVmImageSku": {
       "type": "string",
-      "defaultValue": "Enterprise"
+      "defaultValue": "SQLDEV"
     }
   },
   "variables": {
