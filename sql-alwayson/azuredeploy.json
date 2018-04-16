@@ -34,7 +34,7 @@
         "Standard_D2_v2",
         "Standard_D3_v2",
         "Standard_D4_v2",
-        "Standard_D5_v2",
+        "Standard_B2ms",
         "Standard_D11_v2",
         "Standard_D12_v2",
         "Standard_D13_v2",
@@ -51,7 +51,7 @@
         "Standard_DS14_v2",
         "Standard_DS15_v2"
       ],
-      "defaultValue": "Standard_DS2_v2"
+      "defaultValue": "Standard_B2ms"
     },
     "sqlVmImagePublisher": {
       "type": "string",
@@ -71,7 +71,7 @@
     "cloudWitnessStorageAccountName": "[concat(uniquestring(resourceGroup().id), 'sqlw')]",
     "HASetName": "SqlHASet",
     "SqlVmPrefix": "SQL",
-    "baseUri": "[deployment().properties.templateLink.uri]",
+    "baseUri": "https://raw.githubusercontent.com/vniklas/iac/master/sql-alwayson/azuredeploy.json",
     "SQLPrepareModuleURL": "[uri(variables('baseUri'), 'DSC/PrepareSQLServer.ps1.zip')]",
     "SQLPrepareFunction": "PrepareSQLServer.ps1\\SQLServerPrepareDsc",
     "windowsVmTemplateURL": "[uri(variables('baseUri'),'../primitives/windowsvm.json')]",

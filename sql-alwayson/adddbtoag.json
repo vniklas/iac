@@ -28,7 +28,7 @@
     "variables": {
         "baseUri": "[deployment().properties.templateLink.uri]",
         "moduleURL": "[uri(variables('baseUri'), 'DSC/AddDatabaseAG.ps1.zip')]",
-        "DscFunction": "AddDatabaseAG.ps1\\AddDatabaseAGDsc",
+        "DscFunction": "AddDatabaseAG.ps1\\AddDatabaseAGDsc"
     },
     "resources": [
         {
