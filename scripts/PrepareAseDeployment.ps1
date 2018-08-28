@@ -41,7 +41,8 @@ if ([String]::IsNullOrEmpty($CertificatePath)) {
     $certThumbprint = "cert:\localMachine\my\" + $certificate.Thumbprint    
     Export-PfxCertificate -cert $certThumbprint -FilePath $CertificatePath -Password $CertificatePassword
 } else {
-    $certificate = Get-PfxCertificate -FilePath $CertificatePath -Password $CertificatePassword
+    $certificate = Import-PfxCertificate -CertStoreLocation Cert:\LocalMachine\My -FilePath $CertificatePath -Password $CertificatePassword
+    $certThumbprint = "cert:\localMachine\my\" + $certificate.Thumbprint    
 }
 
 $fileContentBytes = Get-Content $CertificatePath -Encoding Byte
